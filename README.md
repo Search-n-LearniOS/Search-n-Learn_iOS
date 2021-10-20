@@ -11,7 +11,7 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[An app oriented towards kids learning about the outdoors. This app uses a “20 questions” style format and asks the user questions about the animal the user has found and then displays the proposed animal/species/insect in the local area, based on data collected by an API.]
+An app oriented towards kids learning about the outdoors. This application displays the proposed animal/species/insect in the local area of a user-inputted address/location, based on data collected by a series of API. It also provides educational information in a collection view of various animals in the United States.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
@@ -42,10 +42,8 @@ Original App Design Project - README Template
 ### 2. Screen Archetypes
 
 * Login Screen
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
+* Map Screen
+   * Has address bar
    * ...
 
 ### 3. Navigation
