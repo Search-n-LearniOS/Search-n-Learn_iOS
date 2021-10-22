@@ -31,6 +31,7 @@ An app oriented towards kids learning about the outdoors. This application displ
 * User can create an account and log in
 * A location based map view, with ability to input a location
 * Pictures with fun facts of local animals displayed for users to read up on
+* Personalized profile page for user - profile pic, saved searches, and name.
 
 
 **Optional Nice-to-have Stories**
@@ -38,30 +39,43 @@ An app oriented towards kids learning about the outdoors. This application displ
 * Saved list of animals in a collection
 * Fun quiz on animal user just looked at information for
 * Multiple tab views for switching between searching, learning, and saved information.
+* Ability to keep track of animals seen and add personal pictures of animals seen
 
 ### 2. Screen Archetypes
-
-* Login Screen
-* Map Screen
+* Launch Screen w/ Logo
+* Login Screen - user signs up or logs into their account
+* Main Map Screen
    * Has address bar
-   * ...
-
+   * Showcases a Google Maps map and drops a waypoint for the inputted/chosen address put in the address bar
+   * Has three navigation tabs on the bottom (Search, Learn, and Profile)
+ * Settings Screen
+   * Allows user to change language and application notification settings
+   * Allows user to change region for showcasing the top 100 animals
+* Profile Screen
+  * User able to change profile picture
+  * User able to see their saved list of animals + photos
+  * User able to change their name and input their favorite hike location and favorite animal they've seen
+* Learning Screen
+  * Showcases a selection of the top 100 animals in a specific continent
+* Detailed View of Animals
+  * Each animal would have a detailed view when a user clicks on its' collection view portrait to display information about name, habitat, and other fun facts about the animal.  
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Search (main screen)
+* Learn (collection view of top 100 animals in a region)
+* Profile (profile picture, saved animals / pictures, favorite animal/hiking location)
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Launch screen:
+  * Login screen --> sign up confirmation 
+                 --> main map screen (search tab selected here)
+                           --> learn tab --> Learn screen --> detailed view screen of specific animal
+                           --> profile tab --> profile picture screen
+                                           --> saved pictures gallery screen
+                           --> settings button top right corner --> settings screen (language / region settings)
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
