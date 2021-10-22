@@ -72,11 +72,18 @@ An app oriented towards kids learning about the outdoors. This application displ
 * Launch screen:
   * Login screen
     * sign up confirmation 
-                 --> main map screen (search tab selected here)
-                           --> learn tab --> Learn screen --> detailed view screen of specific animal
-                           --> profile tab --> profile picture screen
-                                           --> saved pictures gallery screen
-                           --> settings button top right corner --> settings screen (language / region settings)
+    * main map screen (search tab selected here)
+    *
+      * learn tab
+        * learn screen
+          * detailed view screen of specific animal
+          
+      * profile tab
+        * profile picture screen
+        * saved pictures gallery screen
+       
+       * settings button top right corner
+        * settings screen (language / region settings)
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
