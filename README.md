@@ -73,7 +73,7 @@ An app oriented towards kids learning about the outdoors. This application displ
   * Login screen
     * sign up confirmation 
     * main map screen (search tab selected here)
-    *
+    
       * learn tab
         * learn screen
           * detailed view screen of specific animal
