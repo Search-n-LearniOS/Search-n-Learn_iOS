@@ -70,7 +70,8 @@ An app oriented towards kids learning about the outdoors. This application displ
 **Flow Navigation** (Screen to Screen)
 
 * Launch screen:
-  * Login screen --> sign up confirmation 
+  * Login screen
+    * sign up confirmation 
                  --> main map screen (search tab selected here)
                            --> learn tab --> Learn screen --> detailed view screen of specific animal
                            --> profile tab --> profile picture screen
