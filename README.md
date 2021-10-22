@@ -33,9 +33,10 @@ An app oriented towards kids learning about the outdoors. This application displ
 * Pictures with fun facts of local animals displayed for users to read up on
 
 
+
 **Optional Nice-to-have Stories**
 
-* Saved list of animals in a collection
+* Saved list of animals seen in a collection
 * Fun quiz on animal user just looked at information for
 * Multiple tab views for switching between searching, learning, and saved information.
 
@@ -44,7 +45,14 @@ An app oriented towards kids learning about the outdoors. This application displ
 * Login Screen
 * Map Screen
    * Has address bar
-   * ...
+   * Automatically populates map with users current coords
+   * Has search bar to alter address
+* Collection screen
+   * Shows a collection of animals the user has seen previous in a tableView (use Parse?)
+   * Has a count of total animals seen. Optionally, count based on type of animal, or area.
+* Animals in area screen
+  * Shows which animals can be found in the area
+  * Allows the user to check off which animals they have seen, and saves that information.
 
 ### 3. Navigation
 
@@ -56,12 +64,17 @@ An app oriented towards kids learning about the outdoors. This application displ
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login screen
+  * Map screen
+* Map screen
+   * Collection screen
+   * Animals in area screen
+* Collection screen
+   * Map Screen
+   * Animals in area screen
+* Animals in area screen
+  * Map Screen
+  * Collection Screen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
