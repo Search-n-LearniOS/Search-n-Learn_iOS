@@ -156,7 +156,17 @@ Posting of pictures
 - [Create basic snippets for each Parse network request]
 
 ```swift
-let query = PF();
-print("hello world")
+      let user = PFUser()
+        user.username = userNameField.text
+        user.password = passwordField.text
+        user.email = "email@example.com"
+        
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue()
+            } else {
+                print("error: \(String(describing: error?.localizedDescription))")
+            }
+        }
 ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
