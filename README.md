@@ -141,16 +141,16 @@ Posting of pictures
 
 ### Networking
 - Login
---(Post) User - Create user account
+-- (Post) User - Create user account
 - LocalAnimals
---(Post) User saved animal and facts
+-- (Post) User saved animal and facts
 - MyAnimals
---(Get) User saved animals
---(Delete) delete a post
---(Update) edit a post
+-- (Get) User saved animals
+-- (Delete) delete a post
+-- (Update) edit a post
 - User Profile
---(Get) User details
---(Post) User details
+-- (Get) User details
+-- (Post) User details
 
 - [Create basic snippets for each Parse network request]
 
