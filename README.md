@@ -99,8 +99,60 @@ We did all of our wireframes in Figma.
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+User Table
+|Property|Type|Description|
+|---|:---|:---|
+|userId|Number|unique id for the user (primary key)|
+|email|String|username and email address of the user|
+|password|string|user's password that parse hides|
+|profilePic|url String|link to user's profile pic|
+|firstName|String|First name of the user|
+|lastName|String|Last name of the user|
+|bio|String|paragraph of information the user provides|
+
+Collection of Animals
+|Property|Type|Description|
+|---|:---|:---|
+|primaryId|Number|objectId(primary key)|
+|uniqueAnimalId(foreign key)|pointer||
+|dateSeen|DateTime|Time user seen/saved animal|
+|userId(foreign key)|number||
+
+Collection of Animals Information
+|Property|Type|Description|
+|---|:---|:---|
+|uniqueAnimalId|String|species name|
+|animalName|String|Name of animal|
+|animalImage|String|Url to image|
+|animalInfo|String|Information from wiki api|
+
+Posting of pictures
+|Property|Type|Description|
+|---|:---|:---|
+|objectId|String|Unique id for the post|
+|author|pointer to user|author of the pic|
+|animal|pointer to animal||
+|image|string/file|image that user creates|
+|caption|String|image caption by author|
+|commentsCount|Number|number of comments posted to a pic|
+|likesCount|Number|number of likes for a picture||
+|createdAt|DateTime|Time the post was created|
+|updatedAt|DateTime|Time the post was last edited|
 
 ### Networking
 - [Add list of network requests by screen ]
+- Login
+--(Post) User - Create user account
+- LocalAnimals
+--(Post) User saved animal and facts
+- MyAnimals
+--(Get) User saved animals
+--(Get) Query user and animal tables and join data
+--(Delete) delete a post
+--(Update) edit a post
+- User Profile
+--(Get) User details
+--(Post) User details
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
