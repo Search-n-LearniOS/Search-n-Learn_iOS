@@ -146,7 +146,6 @@ Posting of pictures
 --(Post) User saved animal and facts
 - MyAnimals
 --(Get) User saved animals
---(Get) Query user and animal tables and join data
 --(Delete) delete a post
 --(Update) edit a post
 - User Profile
@@ -156,7 +155,8 @@ Posting of pictures
 - [Create basic snippets for each Parse network request]
 
 ```swift
-      let user = PFUser()
+      //create a user
+      var user = PFUser()
         user.username = userNameField.text
         user.password = passwordField.text
         user.email = "email@example.com"
@@ -168,5 +168,83 @@ Posting of pictures
                 print("error: \(String(describing: error?.localizedDescription))")
             }
         }
+```
+```swift
+      //saved animal and facts
+      var parseObject = PFObject(className:"AnimalCollection")
+
+      parseObject["animal"] = "animal to be saved"
+      parseObject["information"] = "info to be save"
+      parseObject["dateSeen"] = DateTimeNow() 
+      
+      // Saves the new object.
+      parseObject.saveInBackground {
+        (success: Bool, error: Error?) in
+        if (success) {
+          // The object has been saved.
+        } else {
+          // There was a problem, check error.description
+        }
+      }
+```
+
+```swift
+    //(Get) User saved animals
+    var query = PFQuery(className:"MyAnimals")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error == nil && parseObject != nil {
+        print(parseObject)
+      } else {
+        print(error)
+      }
+    }
+```
+
+```swift
+   //edit a post
+   var query = PFQuery(className:"MyAnimals")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error != nil {
+        print(error)
+      } else if parseObject != nil {
+        parseObject["animal"] = "animal to be saved"
+        parseObject["information"] = "info to be save"
+        parseObject["updatedAt"] = DateTimeNow() 
+
+        parseObject.saveInBackground()
+      }
+    }
+```
+
+```swift
+    //deleted saved animal
+    var deleteAttributesOnly = true
+
+    var query = PFQuery(className:"AnimalCollection")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error != nil {
+        print(error)
+      } else if parseObject != nil {
+        if deleteAttributesOnly {
+
+          parseObject.saveInBackground()
+        } else {
+          parseObject.deleteInBackground()
+        }
+      }
+    }
+    
+```
+```swift
+    //(Get) User details
+```
+```swift
+    //(Update) Update user details
 ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
