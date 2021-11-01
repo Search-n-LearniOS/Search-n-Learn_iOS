@@ -155,8 +155,8 @@ Posting of pictures
 
 - [Create basic snippets for each Parse network request]
 
-'''swift
+```swift
 let query = PF();
 print("hello world")
-'''
+```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
