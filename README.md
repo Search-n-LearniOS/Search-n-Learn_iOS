@@ -98,7 +98,7 @@ We did all of our wireframes in Figma.
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
 User Table
 |Property|Type|Description|
 |---|:---|:---|
@@ -154,4 +154,9 @@ Posting of pictures
 --(Post) User details
 
 - [Create basic snippets for each Parse network request]
+
+'''
+//Create user Account
+let query = PF();
+'''
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
