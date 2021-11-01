@@ -92,7 +92,7 @@ We did all of our wireframes in Figma.
 
 ### [BONUS] Digital Wireframes & Mockups
 <img src="https://hosting.photobucket.com/images/i/tmcnutt22/Screen_Shot_2021-11-01_at_7.35.37_PM.png" width=600>
-![Digital Wireframes]("https://hosting.photobucket.com/images/i/tmcnutt22/Screen_Shot_2021-11-01_at_7.35.37_PM.png")
+"https://hosting.photobucket.com/images/i/tmcnutt22/Screen_Shot_2021-11-01_at_7.35.37_PM.png"
 ### [BONUS] Interactive Prototype
 
 ## Schema 
