@@ -140,7 +140,6 @@ Posting of pictures
 |updatedAt|DateTime|Time the post was last edited|
 
 ### Networking
-- [Add list of network requests by screen ]
 - Login
 --(Post) User - Create user account
 - LocalAnimals
