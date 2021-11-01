@@ -243,8 +243,32 @@ Posting of pictures
 ```
 ```swift
     //(Get) User details
+    var query = PFQuery(className:"MyCustomClassName")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error == nil && parseObject != nil {
+        print(parseObject)
+      } else {
+        print(error)
+      }
+    }
 ```
 ```swift
     //(Update) Update user details
+     var query = PFQuery(className:"MyCustomClassName")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error != nil {
+        print(error)
+      } else if parseObject != nil {
+        parseObject["firstName"] = "firstName"
+        parseObject["lastName"] = "lastName"
+        parseObject["profilePic"] = "URL"
+        parseObject["bio"] = "Biography"
+        parseObject.saveInBackground()
+      }
+    }
 ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
