@@ -87,16 +87,18 @@ An app oriented towards kids learning about the outdoors. This application displ
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+We did all of our wireframes in Figma.
+<img src="https://imgur.com/a/cVwoFVz" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-
+<img src="https://imgur.com/a/cVwoFVz" width=600>
 ### [BONUS] Interactive Prototype
 
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
