@@ -92,7 +92,7 @@ We did all of our wireframes in Figma.
 
 ### [BONUS] Digital Wireframes & Mockups
 <img src="https://imgur.com/a/cVwoFVz" width=600>
-![Digital Wireframes](https://imgur.com/BzTN9xb)
+![Digital Wireframes](https://i.imgur.com/BzTN9xb.png)
 ### [BONUS] Interactive Prototype
 
 ## Schema 
