@@ -87,17 +87,188 @@ An app oriented towards kids learning about the outdoors. This application displ
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+We did all of our wireframes in Figma.
+<img src="https://hosting.photobucket.com/images/i/tmcnutt22/Screen_Shot_2021-11-01_at_7.35.37_PM.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-
+<img src="https://hosting.photobucket.com/images/i/tmcnutt22/Screen_Shot_2021-11-01_at_7.35.37_PM.png" width=600>
+"https://hosting.photobucket.com/images/i/tmcnutt22/Screen_Shot_2021-11-01_at_7.35.37_PM.png"
 ### [BONUS] Interactive Prototype
 
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+User Table
+|Property|Type|Description|
+|---|:---|:---|
+|userId|Number|unique id for the user (primary key)|
+|email|String|username and email address of the user|
+|password|string|user's password that parse hides|
+|profilePic|url String|link to user's profile pic|
+|firstName|String|First name of the user|
+|lastName|String|Last name of the user|
+|bio|String|paragraph of information the user provides|
+
+Collection of Animals
+|Property|Type|Description|
+|---|:---|:---|
+|primaryId|Number|objectId(primary key)|
+|uniqueAnimalId(foreign key)|pointer||
+|dateSeen|DateTime|Time user seen/saved animal|
+|userId(foreign key)|number||
+
+Collection of Animals Information
+|Property|Type|Description|
+|---|:---|:---|
+|uniqueAnimalId|String|species name|
+|animalName|String|Name of animal|
+|animalImage|String|Url to image|
+|animalInfo|String|Information from wiki api|
+
+Posting of pictures
+|Property|Type|Description|
+|---|:---|:---|
+|objectId|String|Unique id for the post|
+|author|pointer to user|author of the pic|
+|animal|pointer to animal||
+|image|string/file|image that user creates|
+|caption|String|image caption by author|
+|commentsCount|Number|number of comments posted to a pic|
+|likesCount|Number|number of likes for a picture||
+|createdAt|DateTime|Time the post was created|
+|updatedAt|DateTime|Time the post was last edited|
+
 ### Networking
-- [Add list of network requests by screen ]
+- Login
+  * (Post) User - Create user account
+- LocalAnimals
+  * (Post) User saved animal and facts
+- MyAnimals
+  * (Get) User saved animals
+  * (Delete) delete a post
+  * (Update) edit a post
+- User Profile
+  * (Get) User details
+  * (Post) User details
+
 - [Create basic snippets for each Parse network request]
+
+```swift
+      //create a user
+      var user = PFUser()
+        user.username = userNameField.text
+        user.password = passwordField.text
+        user.email = "email@example.com"
+        
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue()
+            } else {
+                print("error: \(String(describing: error?.localizedDescription))")
+            }
+        }
+```
+```swift
+      //saved animal and facts
+      var parseObject = PFObject(className:"AnimalCollection")
+
+      parseObject["animal"] = "animal to be saved"
+      parseObject["information"] = "info to be save"
+      parseObject["dateSeen"] = DateTimeNow() 
+      
+      // Saves the new object.
+      parseObject.saveInBackground {
+        (success: Bool, error: Error?) in
+        if (success) {
+          // The object has been saved.
+        } else {
+          // There was a problem, check error.description
+        }
+      }
+```
+
+```swift
+    //(Get) User saved animals
+    var query = PFQuery(className:"MyAnimals")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error == nil && parseObject != nil {
+        print(parseObject)
+      } else {
+        print(error)
+      }
+    }
+```
+
+```swift
+   //edit a post
+   var query = PFQuery(className:"MyAnimals")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error != nil {
+        print(error)
+      } else if parseObject != nil {
+        parseObject["animal"] = "animal to be saved"
+        parseObject["information"] = "info to be save"
+        parseObject["updatedAt"] = DateTimeNow() 
+
+        parseObject.saveInBackground()
+      }
+    }
+```
+
+```swift
+    //deleted saved animal
+    var deleteAttributesOnly = true
+
+    var query = PFQuery(className:"AnimalCollection")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error != nil {
+        print(error)
+      } else if parseObject != nil {
+        if deleteAttributesOnly {
+
+          parseObject.saveInBackground()
+        } else {
+          parseObject.deleteInBackground()
+        }
+      }
+    }
+    
+```
+```swift
+    //(Get) User details
+    var query = PFQuery(className:"MyCustomClassName")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error == nil && parseObject != nil {
+        print(parseObject)
+      } else {
+        print(error)
+      }
+    }
+```
+```swift
+    //(Update) Update user details
+     var query = PFQuery(className:"MyCustomClassName")
+
+    query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+      (parseObject: PFObject?, error: NSError?) -> Void in
+      if error != nil {
+        print(error)
+      } else if parseObject != nil {
+        parseObject["firstName"] = "firstName"
+        parseObject["lastName"] = "lastName"
+        parseObject["profilePic"] = "URL"
+        parseObject["bio"] = "Biography"
+        parseObject.saveInBackground()
+      }
+    }
+```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
