@@ -30,6 +30,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLo-fm-ka7">
                                 <rect key="frame" x="20" y="247" width="79" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Nsw-ZJ-8fb"/>
                                     <constraint firstAttribute="width" constant="79" id="r2i-np-rz9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -61,7 +62,7 @@
                                     <constraint firstAttribute="height" constant="34" id="ycE-ZJ-69T"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search n' Learn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFc-hv-h7w">
                                 <rect key="frame" x="51" y="127" width="312" height="54"/>
