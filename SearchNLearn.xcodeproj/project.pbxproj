@@ -3,18 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46602B8154F827C0674D1D3F /* Pods_SearchNLearnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F392B2E94DA40BF55342E74B /* Pods_SearchNLearnTests.framework */; };
+		770455106C0FF0DDA2925E77 /* Pods_SearchNLearn_SearchNLearnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F14026D593F37AFF5FDF36 /* Pods_SearchNLearn_SearchNLearnUITests.framework */; };
+		A9B0AD7027358A3D00A80E26 /* LocalAnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6827358A3B00A80E26 /* LocalAnimalTableViewCell.swift */; };
+		A9B0AD7127358A3D00A80E26 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6927358A3B00A80E26 /* ProfileViewController.swift */; };
+		A9B0AD7227358A3D00A80E26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6A27358A3B00A80E26 /* LoginViewController.swift */; };
+		A9B0AD7327358A3D00A80E26 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6B27358A3B00A80E26 /* CameraViewController.swift */; };
+		A9B0AD7427358A3D00A80E26 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6C27358A3C00A80E26 /* MapViewController.swift */; };
+		A9B0AD7527358A3D00A80E26 /* DetailAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6D27358A3C00A80E26 /* DetailAnimalViewController.swift */; };
+		A9B0AD7627358A3D00A80E26 /* LocalAnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6E27358A3C00A80E26 /* LocalAnimalsTableViewController.swift */; };
+		A9B0AD7727358A3D00A80E26 /* MyAnimalsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6F27358A3C00A80E26 /* MyAnimalsCollectionViewController.swift */; };
 		CEBEB8A32733439300C943F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8A22733439300C943F4 /* AppDelegate.swift */; };
 		CEBEB8A52733439300C943F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8A42733439300C943F4 /* SceneDelegate.swift */; };
-		CEBEB8A72733439300C943F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8A62733439300C943F4 /* ViewController.swift */; };
 		CEBEB8AA2733439300C943F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEB8A82733439300C943F4 /* Main.storyboard */; };
 		CEBEB8AC2733439A00C943F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBEB8AB2733439A00C943F4 /* Assets.xcassets */; };
 		CEBEB8AF2733439A00C943F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEB8AD2733439A00C943F4 /* LaunchScreen.storyboard */; };
 		CEBEB8BA2733439B00C943F4 /* SearchNLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8B92733439B00C943F4 /* SearchNLearnTests.swift */; };
 		CEBEB8C52733439B00C943F4 /* SearchNLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8C42733439B00C943F4 /* SearchNLearnUITests.swift */; };
+		EE3FC113B8B9C001B664F7E0 /* Pods_SearchNLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDF5D7AA935A18C6FA9F985 /* Pods_SearchNLearn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +45,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		208716A4703ECC7779E650CA /* Pods-SearchNLearnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchNLearnTests.debug.xcconfig"; path = "Target Support Files/Pods-SearchNLearnTests/Pods-SearchNLearnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2249798117FBA8DC38857A39 /* Pods-SearchNLearn-SearchNLearnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchNLearn-SearchNLearnUITests.release.xcconfig"; path = "Target Support Files/Pods-SearchNLearn-SearchNLearnUITests/Pods-SearchNLearn-SearchNLearnUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2533A1A3BEAEB527A96FC112 /* Pods-SearchNLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchNLearn.debug.xcconfig"; path = "Target Support Files/Pods-SearchNLearn/Pods-SearchNLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		2DDF5D7AA935A18C6FA9F985 /* Pods_SearchNLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchNLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4197D893CC066C477C4EF3E9 /* Pods-SearchNLearn-SearchNLearnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchNLearn-SearchNLearnUITests.debug.xcconfig"; path = "Target Support Files/Pods-SearchNLearn-SearchNLearnUITests/Pods-SearchNLearn-SearchNLearnUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9B0AD6827358A3B00A80E26 /* LocalAnimalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalAnimalTableViewCell.swift; sourceTree = "<group>"; };
+		A9B0AD6927358A3B00A80E26 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A9B0AD6A27358A3B00A80E26 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A9B0AD6B27358A3B00A80E26 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A9B0AD6C27358A3C00A80E26 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A9B0AD6D27358A3C00A80E26 /* DetailAnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAnimalViewController.swift; sourceTree = "<group>"; };
+		A9B0AD6E27358A3C00A80E26 /* LocalAnimalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalAnimalsTableViewController.swift; sourceTree = "<group>"; };
+		A9B0AD6F27358A3C00A80E26 /* MyAnimalsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnimalsCollectionViewController.swift; sourceTree = "<group>"; };
 		CEBEB89F2733439300C943F4 /* SearchNLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchNLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEB8A22733439300C943F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBEB8A42733439300C943F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEBEB8A62733439300C943F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEBEB8A92733439300C943F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEBEB8AB2733439A00C943F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBEB8AE2733439A00C943F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +71,10 @@
 		CEBEB8C02733439B00C943F4 /* SearchNLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchNLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEB8C42733439B00C943F4 /* SearchNLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNLearnUITests.swift; sourceTree = "<group>"; };
 		CEBEB8C62733439B00C943F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC21A7B6597E34863A6E6E00 /* Pods-SearchNLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchNLearn.release.xcconfig"; path = "Target Support Files/Pods-SearchNLearn/Pods-SearchNLearn.release.xcconfig"; sourceTree = "<group>"; };
+		E4F14026D593F37AFF5FDF36 /* Pods_SearchNLearn_SearchNLearnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchNLearn_SearchNLearnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F392B2E94DA40BF55342E74B /* Pods_SearchNLearnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchNLearnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAECF1D5BE7E0856D5636DEB /* Pods-SearchNLearnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchNLearnTests.release.xcconfig"; path = "Target Support Files/Pods-SearchNLearnTests/Pods-SearchNLearnTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3FC113B8B9C001B664F7E0 /* Pods_SearchNLearn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46602B8154F827C0674D1D3F /* Pods_SearchNLearnTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770455106C0FF0DDA2925E77 /* Pods_SearchNLearn_SearchNLearnUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60077D9CABD9A3B073F22473 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DDF5D7AA935A18C6FA9F985 /* Pods_SearchNLearn.framework */,
+				E4F14026D593F37AFF5FDF36 /* Pods_SearchNLearn_SearchNLearnUITests.framework */,
+				F392B2E94DA40BF55342E74B /* Pods_SearchNLearnTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEBEB8962733439200C943F4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				CEBEB8B82733439B00C943F4 /* SearchNLearnTests */,
 				CEBEB8C32733439B00C943F4 /* SearchNLearnUITests */,
 				CEBEB8A02733439300C943F4 /* Products */,
+				CFFA397AFF86A81778BC8AB7 /* Pods */,
+				60077D9CABD9A3B073F22473 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +140,16 @@
 		CEBEB8A12733439300C943F4 /* SearchNLearn */ = {
 			isa = PBXGroup;
 			children = (
+				A9B0AD6B27358A3B00A80E26 /* CameraViewController.swift */,
+				A9B0AD6D27358A3C00A80E26 /* DetailAnimalViewController.swift */,
+				A9B0AD6E27358A3C00A80E26 /* LocalAnimalsTableViewController.swift */,
+				A9B0AD6827358A3B00A80E26 /* LocalAnimalTableViewCell.swift */,
+				A9B0AD6A27358A3B00A80E26 /* LoginViewController.swift */,
+				A9B0AD6C27358A3C00A80E26 /* MapViewController.swift */,
+				A9B0AD6F27358A3C00A80E26 /* MyAnimalsCollectionViewController.swift */,
+				A9B0AD6927358A3B00A80E26 /* ProfileViewController.swift */,
 				CEBEB8A22733439300C943F4 /* AppDelegate.swift */,
 				CEBEB8A42733439300C943F4 /* SceneDelegate.swift */,
-				CEBEB8A62733439300C943F4 /* ViewController.swift */,
 				CEBEB8A82733439300C943F4 /* Main.storyboard */,
 				CEBEB8AB2733439A00C943F4 /* Assets.xcassets */,
 				CEBEB8AD2733439A00C943F4 /* LaunchScreen.storyboard */,
@@ -128,6 +176,19 @@
 			path = SearchNLearnUITests;
 			sourceTree = "<group>";
 		};
+		CFFA397AFF86A81778BC8AB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2533A1A3BEAEB527A96FC112 /* Pods-SearchNLearn.debug.xcconfig */,
+				DC21A7B6597E34863A6E6E00 /* Pods-SearchNLearn.release.xcconfig */,
+				4197D893CC066C477C4EF3E9 /* Pods-SearchNLearn-SearchNLearnUITests.debug.xcconfig */,
+				2249798117FBA8DC38857A39 /* Pods-SearchNLearn-SearchNLearnUITests.release.xcconfig */,
+				208716A4703ECC7779E650CA /* Pods-SearchNLearnTests.debug.xcconfig */,
+				FAECF1D5BE7E0856D5636DEB /* Pods-SearchNLearnTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBEB8C92733439B00C943F4 /* Build configuration list for PBXNativeTarget "SearchNLearn" */;
 			buildPhases = (
+				5F11E9B8DA89D383527F7EA1 /* [CP] Check Pods Manifest.lock */,
 				CEBEB89B2733439200C943F4 /* Sources */,
 				CEBEB89C2733439200C943F4 /* Frameworks */,
 				CEBEB89D2733439200C943F4 /* Resources */,
+				11128E371A665DF1915A65C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBEB8CC2733439B00C943F4 /* Build configuration list for PBXNativeTarget "SearchNLearnTests" */;
 			buildPhases = (
+				9B2C41B4463532E9E085F419 /* [CP] Check Pods Manifest.lock */,
 				CEBEB8B12733439B00C943F4 /* Sources */,
 				CEBEB8B22733439B00C943F4 /* Frameworks */,
 				CEBEB8B32733439B00C943F4 /* Resources */,
@@ -170,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBEB8CF2733439B00C943F4 /* Build configuration list for PBXNativeTarget "SearchNLearnUITests" */;
 			buildPhases = (
+				F27B7850DF143F3948D17694 /* [CP] Check Pods Manifest.lock */,
 				CEBEB8BC2733439B00C943F4 /* Sources */,
 				CEBEB8BD2733439B00C943F4 /* Frameworks */,
 				CEBEB8BE2733439B00C943F4 /* Resources */,
+				8D009EC7BFE5BF0AD2F69F6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +319,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11128E371A665DF1915A65C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchNLearn/Pods-SearchNLearn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchNLearn/Pods-SearchNLearn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchNLearn/Pods-SearchNLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F11E9B8DA89D383527F7EA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchNLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D009EC7BFE5BF0AD2F69F6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchNLearn-SearchNLearnUITests/Pods-SearchNLearn-SearchNLearnUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchNLearn-SearchNLearnUITests/Pods-SearchNLearn-SearchNLearnUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchNLearn-SearchNLearnUITests/Pods-SearchNLearn-SearchNLearnUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B2C41B4463532E9E085F419 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchNLearnTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F27B7850DF143F3948D17694 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchNLearn-SearchNLearnUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEBEB89B2733439200C943F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBEB8A72733439300C943F4 /* ViewController.swift in Sources */,
+				A9B0AD7227358A3D00A80E26 /* LoginViewController.swift in Sources */,
+				A9B0AD7627358A3D00A80E26 /* LocalAnimalsTableViewController.swift in Sources */,
+				A9B0AD7027358A3D00A80E26 /* LocalAnimalTableViewCell.swift in Sources */,
+				A9B0AD7527358A3D00A80E26 /* DetailAnimalViewController.swift in Sources */,
+				A9B0AD7127358A3D00A80E26 /* ProfileViewController.swift in Sources */,
+				A9B0AD7327358A3D00A80E26 /* CameraViewController.swift in Sources */,
 				CEBEB8A32733439300C943F4 /* AppDelegate.swift in Sources */,
 				CEBEB8A52733439300C943F4 /* SceneDelegate.swift in Sources */,
+				A9B0AD7727358A3D00A80E26 /* MyAnimalsCollectionViewController.swift in Sources */,
+				A9B0AD7427358A3D00A80E26 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +609,7 @@
 		};
 		CEBEB8CA2733439B00C943F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2533A1A3BEAEB527A96FC112 /* Pods-SearchNLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +629,7 @@
 		};
 		CEBEB8CB2733439B00C943F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC21A7B6597E34863A6E6E00 /* Pods-SearchNLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +649,7 @@
 		};
 		CEBEB8CD2733439B00C943F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208716A4703ECC7779E650CA /* Pods-SearchNLearnTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +672,7 @@
 		};
 		CEBEB8CE2733439B00C943F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAECF1D5BE7E0856D5636DEB /* Pods-SearchNLearnTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +695,7 @@
 		};
 		CEBEB8D02733439B00C943F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4197D893CC066C477C4EF3E9 /* Pods-SearchNLearn-SearchNLearnUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +716,7 @@
 		};
 		CEBEB8D12733439B00C943F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2249798117FBA8DC38857A39 /* Pods-SearchNLearn-SearchNLearnUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
