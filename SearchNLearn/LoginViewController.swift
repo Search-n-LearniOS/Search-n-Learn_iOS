@@ -19,6 +19,16 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func OnSignin(_ sender: Any) {
+        let username = UsernameTextField.text!
+        let password = PasswordTextField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
+            if user != nil {
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+            } else {
+                print("Login error")
+            }
+        }
     }
     
     @IBAction func OnSignup(_ sender: Any) {

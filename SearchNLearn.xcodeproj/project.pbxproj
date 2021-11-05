@@ -17,6 +17,7 @@
 		A9B0AD7527358A3D00A80E26 /* DetailAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6D27358A3C00A80E26 /* DetailAnimalViewController.swift */; };
 		A9B0AD7627358A3D00A80E26 /* LocalAnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6E27358A3C00A80E26 /* LocalAnimalsTableViewController.swift */; };
 		A9B0AD7727358A3D00A80E26 /* MyAnimalsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD6F27358A3C00A80E26 /* MyAnimalsCollectionViewController.swift */; };
+		A9B0AD7927359F0800A80E26 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0AD7827359F0800A80E26 /* SignupViewController.swift */; };
 		CEBEB8A32733439300C943F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8A22733439300C943F4 /* AppDelegate.swift */; };
 		CEBEB8A52733439300C943F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8A42733439300C943F4 /* SceneDelegate.swift */; };
 		CEBEB8AA2733439300C943F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEB8A82733439300C943F4 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		A9B0AD6D27358A3C00A80E26 /* DetailAnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAnimalViewController.swift; sourceTree = "<group>"; };
 		A9B0AD6E27358A3C00A80E26 /* LocalAnimalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalAnimalsTableViewController.swift; sourceTree = "<group>"; };
 		A9B0AD6F27358A3C00A80E26 /* MyAnimalsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnimalsCollectionViewController.swift; sourceTree = "<group>"; };
+		A9B0AD7827359F0800A80E26 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CEBEB89F2733439300C943F4 /* SearchNLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchNLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEB8A22733439300C943F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBEB8A42733439300C943F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				CEBEB8AB2733439A00C943F4 /* Assets.xcassets */,
 				CEBEB8AD2733439A00C943F4 /* LaunchScreen.storyboard */,
 				CEBEB8B02733439A00C943F4 /* Info.plist */,
+				A9B0AD7827359F0800A80E26 /* SignupViewController.swift */,
 			);
 			path = SearchNLearn;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			files = (
 				A9B0AD7227358A3D00A80E26 /* LoginViewController.swift in Sources */,
 				A9B0AD7627358A3D00A80E26 /* LocalAnimalsTableViewController.swift in Sources */,
+				A9B0AD7927359F0800A80E26 /* SignupViewController.swift in Sources */,
 				A9B0AD7027358A3D00A80E26 /* LocalAnimalTableViewCell.swift in Sources */,
 				A9B0AD7527358A3D00A80E26 /* DetailAnimalViewController.swift in Sources */,
 				A9B0AD7127358A3D00A80E26 /* ProfileViewController.swift in Sources */,
