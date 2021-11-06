@@ -24,9 +24,10 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
 
         // Do any additional setup after loading the view.
         ProfileImage.layer.borderWidth = 1
-        ProfileImage.layer.masksToBounds = false
+//        ProfileImage.layer.masksToBounds = false
         ProfileImage.layer.borderColor = UIColor.black.cgColor
-        ProfileImage.layer.cornerRadius = ProfileImage.frame.height/2
+        ProfileImage.layer.cornerRadius = ProfileImage.frame.width/6
+//        ProfileImage.layer.cornerRadius = ProfileImage.frame.height/2
         ProfileImage.clipsToBounds = true
     }
     @IBAction func OnCancel(_ sender: Any) {

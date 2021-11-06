@@ -760,7 +760,7 @@
         <segue reference="VHh-X5-F7l"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="image" width="287" height="226"/>
+        <image name="image" width="286.66665649414062" height="226"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
