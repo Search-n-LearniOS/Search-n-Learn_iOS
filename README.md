@@ -272,3 +272,6 @@ Posting of pictures
     }
 ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+### Sprint 1 GIF(S)
+
