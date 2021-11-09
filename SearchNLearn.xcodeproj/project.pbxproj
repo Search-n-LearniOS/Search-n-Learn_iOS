@@ -25,6 +25,7 @@
 		CEBEB8AF2733439A00C943F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEB8AD2733439A00C943F4 /* LaunchScreen.storyboard */; };
 		CEBEB8BA2733439B00C943F4 /* SearchNLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8B92733439B00C943F4 /* SearchNLearnTests.swift */; };
 		CEBEB8C52733439B00C943F4 /* SearchNLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEB8C42733439B00C943F4 /* SearchNLearnUITests.swift */; };
+		E28D857727389997001BDAAC /* MyAnimalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D857627389997001BDAAC /* MyAnimalCollectionViewCell.swift */; };
 		EE3FC113B8B9C001B664F7E0 /* Pods_SearchNLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDF5D7AA935A18C6FA9F985 /* Pods_SearchNLearn.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		CEBEB8C42733439B00C943F4 /* SearchNLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNLearnUITests.swift; sourceTree = "<group>"; };
 		CEBEB8C62733439B00C943F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC21A7B6597E34863A6E6E00 /* Pods-SearchNLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchNLearn.release.xcconfig"; path = "Target Support Files/Pods-SearchNLearn/Pods-SearchNLearn.release.xcconfig"; sourceTree = "<group>"; };
+		E28D857627389997001BDAAC /* MyAnimalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimalCollectionViewCell.swift; sourceTree = "<group>"; };
 		E4F14026D593F37AFF5FDF36 /* Pods_SearchNLearn_SearchNLearnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchNLearn_SearchNLearnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F392B2E94DA40BF55342E74B /* Pods_SearchNLearnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchNLearnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAECF1D5BE7E0856D5636DEB /* Pods-SearchNLearnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchNLearnTests.release.xcconfig"; path = "Target Support Files/Pods-SearchNLearnTests/Pods-SearchNLearnTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				CEBEB8AD2733439A00C943F4 /* LaunchScreen.storyboard */,
 				CEBEB8B02733439A00C943F4 /* Info.plist */,
 				A9B0AD7827359F0800A80E26 /* SignupViewController.swift */,
+				E28D857627389997001BDAAC /* MyAnimalCollectionViewCell.swift */,
 			);
 			path = SearchNLearn;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28D857727389997001BDAAC /* MyAnimalCollectionViewCell.swift in Sources */,
 				A9B0AD7227358A3D00A80E26 /* LoginViewController.swift in Sources */,
 				A9B0AD7627358A3D00A80E26 /* LocalAnimalsTableViewController.swift in Sources */,
 				A9B0AD7927359F0800A80E26 /* SignupViewController.swift in Sources */,
