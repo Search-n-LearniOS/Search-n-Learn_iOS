@@ -27,11 +27,11 @@ An app oriented towards kids learning about the outdoors. This application displ
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* App shows a logo on launch
-* User can create an account and log in
-* A location based map view, with ability to input a location
-* Pictures with fun facts of local animals displayed for users to read up on
-* Personalized profile page for user - profile pic, saved searches, and name.
+* [x] App shows a logo on launch
+* [x] User can create an account and log in
+* [ ] A location based map view, with ability to input a location
+* [ ] Pictures with fun facts of local animals displayed for users to read up on
+* [ ] Personalized profile page for user - profile pic, saved searches, and name.
 
 
 **Optional Nice-to-have Stories**
