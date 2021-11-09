@@ -274,4 +274,10 @@ Posting of pictures
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 ### Sprint 1 GIF(S)
+Here's a walkthrough of implemented user stories:
 
+Login and Logout:
+<img src='http://g.recordit.co/ThrRaTFRwN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Navigate through the View Controllers:
+<img src='http://g.recordit.co/y5yyH4kpmo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
