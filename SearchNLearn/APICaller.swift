@@ -13,35 +13,48 @@ let url = URL(string: "https://api.gbif.org/v1/occurrence/search?decimalLatitude
 class SearchNLearnAPICaller {
     
     static func getCritters () {
-    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-    guard let dataResponse = data,
-              error == nil else {
-              print(error?.localizedDescription ?? "Response Error")
-              return }
-        do{
-            let jsonResponse = try JSONSerialization.jsonObject(with:
-                                   dataResponse, options: [])
-            let species = ((jsonResponse as? [String: Any])?["results"] as? [String: Any])?["species"]//Response result
-            print(species)
-            
-         } catch let parsingError {
-            print("Error", parsingError)
-       }
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        guard let dataResponse = data,
+                  error == nil else {
+                  print(error?.localizedDescription ?? "Response Error")
+                  return }
+            do{
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                                       dataResponse, options: [])
+                let species = ((jsonResponse as? [String: Any])?["results"] as? [String: Any])?["species"]//Response result
+                print(species)
+                
+             } catch let parsingError {
+                print("Error", parsingError)
+           }
+        }
+        task.resume()
+    }
     
     
     
     func getWikiDictionary(animalName: String, success: @escaping ([NSDictionary]) -> (), failure: @escaping (Error) -> ()) {
         let url = URL(string: "https://en.wikipedia.org/w/api.php")!
-        let parameters = [
-            "action": "query",
-            "titles": animalName,
-            "format": "json",
-            "prop": "images|info"
+        var absoluteURL = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        absoluteURL?.queryItems = [
+            URLQueryItem(name: "action", value: "query"),
+            URLQueryItem(name: "titles", value: "animalName"),
+            URLQueryItem(name: "format", value: "json"),
+            URLQueryItem(name: "prop", value: "images|info")
         ]
-        AF.request(url, parameters: parameters).response { response in
-            print(response)
+        let task = URLSession.shared.dataTask(with: absoluteURL?.string) { data, response, error in
+        guard let dataResponse = data,
+              error == nil else {
+                  print(error?.localizedDescription ?? "Response Error")
+                  return}
+            do{
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                                       dataResponse, options: [])
+                print(jsonResponse)
+                
+             } catch let parsingError {
+                print("Error", parsingError)
+                }    
+            }
         }
-    }
-    task.resume()
-}
 }
