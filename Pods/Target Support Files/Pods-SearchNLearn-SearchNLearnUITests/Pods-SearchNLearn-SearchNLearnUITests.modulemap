@@ -1,0 +1,6 @@
+framework module Pods_SearchNLearn_SearchNLearnUITests {
+  umbrella header "Pods-SearchNLearn-SearchNLearnUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
