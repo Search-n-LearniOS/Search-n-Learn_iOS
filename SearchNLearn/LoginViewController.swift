@@ -15,9 +15,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SearchNLearnAPICaller.getCritters()
-        SearchNLearnAPICaller.getWikiDictionary(animalName: "Bear") { my_dict in
-            print("hello")
+//        replace bear with the name of the animal at that cell from other API
+        SearchNLearnAPICaller.getWikiDictionary(animalName: "bear") { (my_array: [Any]) in
+            let title = my_array[0] as? String
+            let imageUrl = my_array[1]
+//            Use the imageVar.af.setImage(withURL: imageUrl!) to set image in views
         } failure: { error in
             print(error)
         }

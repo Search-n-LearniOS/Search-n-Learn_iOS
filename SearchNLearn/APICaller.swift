@@ -7,6 +7,7 @@
 
 import Alamofire
 import UIKit
+import Parse
 
 let url = URL(string: "https://api.gbif.org/v1/occurrence/search?decimalLatitude=42,46&decimalLongitude=-85,-80&hasCoordinate=true&limit=100&phylumKey=44")!
 
@@ -35,19 +36,10 @@ class SearchNLearnAPICaller {
     
     
     
-    static func getWikiDictionary(animalName: String, success: @escaping ([NSDictionary]) -> (), failure: @escaping (Error) -> ()) {
-        let url = URL(string: "https://en.wikipedia.org/w/api.php?format=json?action=query?titles=bear?prop=images|info")
-//        var absoluteURL = URLComponents(url: url, resolvingAgainstBaseURL: true)
-//        absoluteURL?.queryItems = [
-//            URLQueryItem(name: "action", value: "query"),
-//            URLQueryItem(name: "titles", value: animalName),
-//            URLQueryItem(name: "format", value: "json"),
-//            URLQueryItem(name: "prop", value: "images|info")
-//        ]
-//        let URL = absoluteURL?.string
-//        print(URL)
-    
-        let task = URLSession.shared.dataTask(with: url?) { (data, response, error) in
+    static func getWikiDictionary(animalName: String, success: @escaping ([Any]) -> (), failure: @escaping (Error) -> ()) {
+        let wikiurl = URL(string: "https://en.wikipedia.org/w/api.php?format=json&action=query&titles=\(animalName)&prop=pageimages")!
+
+        let task = URLSession.shared.dataTask(with: wikiurl) { (data, response, error) in
         guard let dataResponse = data,
               error == nil else {
                   print(error?.localizedDescription ?? "Response Error")
@@ -55,7 +47,18 @@ class SearchNLearnAPICaller {
             do{
                 let jsonResponse = try JSONSerialization.jsonObject(with:
                                        dataResponse, options: [])
-                print(jsonResponse)
+                let wiki = jsonResponse as? [String: Any]
+                let results = wiki!["query"] as? [String: Any]
+                let results2 = results!["pages"] as? [String: Any]
+//                Need to find the page id for each animal somehow to replace the 4400
+                let results3 = results2!["4400"] as? [String: Any]
+//                print(results3!)
+                let title = results3!["title"]! as? String
+                let pageImage = results3!["pageimage"]! as? String
+                let imageFile = "https://en.wikipedia.org/wiki/\(title!)#/media/File:\(pageImage!)"
+                let imageUrl = URL(string: imageFile)!
+                let info = [title!, imageUrl] as [Any]
+                success(info as! [Any])
 
              } catch let parsingError {
                 print("Error", parsingError)
