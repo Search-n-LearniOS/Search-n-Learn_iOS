@@ -15,13 +15,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let test1 = SearchNLearnAPICaller()
-        test1.getWikiDictionary(animalName: "bear") { test in
-            print("hi")
-        } failure: { error in
-            print(error)
-        }
-
+        SearchNLearnAPICaller.getCritters()
 
         // Do any additional setup after loading the view.
     }

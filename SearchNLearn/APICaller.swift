@@ -21,8 +21,10 @@ class SearchNLearnAPICaller {
             do{
                 let jsonResponse = try JSONSerialization.jsonObject(with:
                                        dataResponse, options: [])
-                let species = ((jsonResponse as? [String: Any])?["results"] as? [String: Any])?["species"]//Response result
-                print(species)
+                let species = jsonResponse as? [String: Any]//Response result
+                let results = species!["results"] as? [NSDictionary]
+                print(results![0]["species"])
+                
                 
              } catch let parsingError {
                 print("Error", parsingError)
@@ -42,19 +44,20 @@ class SearchNLearnAPICaller {
             URLQueryItem(name: "format", value: "json"),
             URLQueryItem(name: "prop", value: "images|info")
         ]
-        let task = URLSession.shared.dataTask(with: absoluteURL?.string) { data, response, error in
-        guard let dataResponse = data,
-              error == nil else {
-                  print(error?.localizedDescription ?? "Response Error")
-                  return}
-            do{
-                let jsonResponse = try JSONSerialization.jsonObject(with:
-                                       dataResponse, options: [])
-                print(jsonResponse)
-                
-             } catch let parsingError {
-                print("Error", parsingError)
-                }    
-            }
-        }
+//        let task = URLSession.shared.dataTask(with: absoluteURL?.string) { data, response, error in
+//        guard let dataResponse = data,
+//              error == nil else {
+//                  print(error?.localizedDescription ?? "Response Error")
+//                  return}
+//            do{
+//                let jsonResponse = try JSONSerialization.jsonObject(with:
+//                                       dataResponse, options: [])
+//                print(jsonResponse)
+//                
+//             } catch let parsingError {
+//                print("Error", parsingError)
+//                }
+//            }
+//        task.resume()
+    }
 }
