@@ -33,8 +33,7 @@ class SearchNLearnAPICaller {
                             localAnimalArray.append(value as! String)
                         }
                     }
-                }
-                print(localAnimalArray)
+                    success(localAnimalArray as! [Any]) }
              } catch let parsingError {
                 print("Error", parsingError)
            }

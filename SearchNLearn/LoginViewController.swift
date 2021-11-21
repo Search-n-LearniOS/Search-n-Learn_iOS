@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
 //        replace bear with the name of the animal at that cell from other API
         SearchNLearnAPICaller.getWikiDictionary(animalName: "bear") { (my_array: [Any]) in
             let title = my_array[0] as? String
+            print(title)
             let imageUrl = my_array[1]
 //            Use the imageVar.af.setImage(withURL: imageUrl!) to set image in views
         } failure: { error in
@@ -26,10 +27,10 @@ class LoginViewController: UIViewController {
         
         SearchNLearnAPICaller.getCritters () { (my_animal_array: [Any]) in
             
-            print(my_animal_array)
-            
-            for animal in my_animal_array {
-                let animal = animal as! String
+            let first_animal = my_animal_array[0] as? String
+            print(first_animal)
+            for count in my_animal_array {
+                let animal = count as! String
                 print(animal)
             }} failure: { error in
                 print(error)
