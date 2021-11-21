@@ -23,8 +23,19 @@ class LoginViewController: UIViewController {
         } failure: { error in
             print(error)
         }
-
-
+        
+        SearchNLearnAPICaller.getCritters () { (my_animal_array: [Any]) in
+            
+            print(my_animal_array)
+            
+            for animal in my_animal_array {
+                let animal = animal as! String
+                print(animal)
+            }} failure: { error in
+                print(error)
+            }
+            
+       
         // Do any additional setup after loading the view.
     }
     @IBAction func OnSignin(_ sender: Any) {
