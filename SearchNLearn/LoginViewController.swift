@@ -28,9 +28,12 @@ class LoginViewController: UIViewController {
         SearchNLearnAPICaller.getCritters () { (my_animal_array: [Any]) in
             
             print(my_animal_array)
-            for count in my_animal_array {
-                print(count)
-            }} failure: { error in
+            for animal in my_animal_array {
+                print(animal)
+                
+            }
+            
+            } failure: { error in
                 print(error)
             }
             

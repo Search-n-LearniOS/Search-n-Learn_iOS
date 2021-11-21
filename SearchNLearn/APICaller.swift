@@ -34,7 +34,8 @@ class SearchNLearnAPICaller {
                         }
                     }
                 }
-                success(localAnimalArray as! [Any])
+                let noDups = Array(NSOrderedSet(array:localAnimalArray))
+                success(noDups as! [Any])
              } catch let parsingError {
                 print("Error", parsingError)
            }
