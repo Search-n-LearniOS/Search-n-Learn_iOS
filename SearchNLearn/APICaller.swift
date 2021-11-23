@@ -13,7 +13,7 @@ let url = URL(string: "https://api.gbif.org/v1/occurrence/search?decimalLatitude
 
 class SearchNLearnAPICaller {
     
-    static func getCritters () {
+    static func getCritters(success: @escaping ([Any]) -> (), failure: @escaping (Error) -> ()) {
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
         guard let dataResponse = data,
                   error == nil else {
@@ -24,16 +24,24 @@ class SearchNLearnAPICaller {
                                        dataResponse, options: [])
                 let species = jsonResponse as? [String: Any]//Response result
                 let results = species!["results"] as? [NSDictionary]
-                print(results![0]["species"])
-                
-                
+                let animals = results! as NSArray
+                var localAnimalArray = [] as Array
+                for animal in animals {
+                    let species = animal as! NSDictionary
+                    for (key,value) in species {
+                        if key as! String == "species" {
+                            localAnimalArray.append(value as! String)
+                        }
+                    }
+                }
+                let noDups = Array(NSOrderedSet(array:localAnimalArray))
+                success(noDups as! [Any])
              } catch let parsingError {
                 print("Error", parsingError)
            }
         }
         task.resume()
     }
-    
     
     
     static func getWikiDictionary(animalName: String, success: @escaping ([Any]) -> (), failure: @escaping (Error) -> ()) {
