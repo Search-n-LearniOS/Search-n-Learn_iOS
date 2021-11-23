@@ -63,14 +63,15 @@ class SearchNLearnAPICaller {
 //                Need to find the page id for each animal somehow to replace the 4400
                 let keys = results2?.keys.first
                 let results3 = results2![keys!] as? [String: Any]
-                print(results3!)
                 let title = results3!["title"]! as? String
                 let titlearray = title?.components(separatedBy: " ")
                 let newtitle = titlearray?.joined(separator: "_")
                 
+//                GUARD pageImage if pageimage doesn't exist
                 let pageImage = results3!["pageimage"]! as? String
                 let imageFile = "https://en.wikipedia.org/wiki/\(newtitle!)#/media/File:\(pageImage!)"
-                print(imageFile)
+//                print(imageFile)
+//                GUARD if url string has something swift doesn't like
                 let imageUrl = URL(string: imageFile)!
                 let info = [title!, imageUrl] as [Any]
                 success(info as! [Any])

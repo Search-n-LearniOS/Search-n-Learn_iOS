@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        replace bear with the name of the animal at that cell from other API
-        SearchNLearnAPICaller.getWikiDictionary(animalName: "american black bear") { (my_array: [Any]) in
+        SearchNLearnAPICaller.getWikiDictionary(animalName: "red panda") { (my_array: [Any]) in
             let title = my_array[0] as? String
             print(title)
             let imageUrl = my_array[1]
