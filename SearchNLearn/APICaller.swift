@@ -37,7 +37,9 @@ class SearchNLearnAPICaller {
     
     
     static func getWikiDictionary(animalName: String, success: @escaping ([Any]) -> (), failure: @escaping (Error) -> ()) {
-        let wikiurl = URL(string: "https://en.wikipedia.org/w/api.php?format=json&action=query&titles=\(animalName)&prop=pageimages")!
+        let components = animalName.components(separatedBy: " ")
+        let newname = components.joined(separator: "+")
+        let wikiurl = URL(string: "https://en.wikipedia.org/w/api.php?format=json&action=query&titles=\(newname)&prop=pageimages")!
 
         let task = URLSession.shared.dataTask(with: wikiurl) { (data, response, error) in
         guard let dataResponse = data,
@@ -51,11 +53,16 @@ class SearchNLearnAPICaller {
                 let results = wiki!["query"] as? [String: Any]
                 let results2 = results!["pages"] as? [String: Any]
 //                Need to find the page id for each animal somehow to replace the 4400
-                let results3 = results2!["4400"] as? [String: Any]
-//                print(results3!)
+                let keys = results2?.keys.first
+                let results3 = results2![keys!] as? [String: Any]
+                print(results3!)
                 let title = results3!["title"]! as? String
+                let titlearray = title?.components(separatedBy: " ")
+                let newtitle = titlearray?.joined(separator: "_")
+                
                 let pageImage = results3!["pageimage"]! as? String
-                let imageFile = "https://en.wikipedia.org/wiki/\(title!)#/media/File:\(pageImage!)"
+                let imageFile = "https://en.wikipedia.org/wiki/\(newtitle!)#/media/File:\(pageImage!)"
+                print(imageFile)
                 let imageUrl = URL(string: imageFile)!
                 let info = [title!, imageUrl] as [Any]
                 success(info as! [Any])
